@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'ToastPod_Example' do
+  pod 'ToastPod', :path => '../'
+
+end

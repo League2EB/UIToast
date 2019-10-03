@@ -1,0 +1,22 @@
+{
+  "name": "ToastPod",
+  "version": "0.2.0",
+  "summary": "This is an ios Toast library.",
+  "description": "This is an iosToast library. This is an iosToast library.",
+  "homepage": "https://gitlab.program.com.tw/AppGroup/ToastPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kellychen": "kellychen@program.com.tw"
+  },
+  "source": {
+    "git": "https://gitlab.program.com.tw/AppGroup/ToastPod.git",
+    "tag": "0.2.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ToastPod/Classes/**/*"
+}

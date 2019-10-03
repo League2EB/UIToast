@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ToastPod_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfH-qs-6qi">
+                                <rect key="frame" x="36" y="75" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.74901960779999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ShowBaseToast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBaseToast:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZzM-II-loO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBo-ok-D4L">
+                                <rect key="frame" x="36" y="125" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.74901960779999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ShowImgToast">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showImgToast:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="veQ-1f-Qmz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJf-Rh-F4e">
+                                <rect key="frame" x="36" y="175" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.74901960779999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ShowActivityIndicatorView">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showActivityIndicatorView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WRS-ye-pJw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kBo-ok-D4L" firstAttribute="centerX" secondItem="FfH-qs-6qi" secondAttribute="centerX" id="3Bf-Yy-f9V"/>
+                            <constraint firstItem="kBo-ok-D4L" firstAttribute="top" secondItem="FfH-qs-6qi" secondAttribute="bottom" constant="20" id="5MZ-SZ-XUH"/>
+                            <constraint firstItem="bJf-Rh-F4e" firstAttribute="top" secondItem="kBo-ok-D4L" secondAttribute="bottom" constant="20" id="7BM-h4-u4b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJf-Rh-F4e" secondAttribute="trailing" constant="20" id="9VT-sV-au9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kBo-ok-D4L" secondAttribute="trailing" constant="20" id="C92-V0-dAd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FfH-qs-6qi" secondAttribute="trailing" constant="20" id="HKY-0f-hZp"/>
+                            <constraint firstItem="kBo-ok-D4L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="VMR-Ze-Wsa"/>
+                            <constraint firstItem="bJf-Rh-F4e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="e22-Rt-jAR"/>
+                            <constraint firstItem="FfH-qs-6qi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="gPW-8N-1x3"/>
+                            <constraint firstItem="FfH-qs-6qi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="tBh-Vk-kHD"/>
+                            <constraint firstItem="FfH-qs-6qi" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tKp-wV-1C7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
